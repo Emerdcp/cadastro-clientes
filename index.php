@@ -47,13 +47,15 @@
     echo "operadores lógicos<br>";
     $fumante = true;
     echo !$fumante;
-    /*
+    
     $idade = 18;
     if ($idade > 18 || $idade ==18){
         echo "<p>Sua idade é $idade </p>";
         echo "<p>Pode entrar na festa</p>";
     }
-    
+
+    echo "<br>"; 
+    echo "<br>";
     $idade = 18;
     if ($idade >= 18 && $fumante == false){
         echo "<p>Sua idade é $idade </p>";
@@ -61,7 +63,9 @@
     }else{
         echo "Você não pode entrar";
     }
-    */
+
+    echo "<br>"; 
+    echo "<br>";
     $idade = 18;
     if ($idade >= 18 && $fumante == false){
         echo "<p>Sua idade é $idade </p>";
@@ -71,7 +75,9 @@
     }else{
         echo "Você não pode entrar";
     }
-
+    
+    echo "<br>"; 
+    echo "<br>";
     $nota = 8;
     if($nota >= 8){
         echo "<p>Aprovado</p>";
@@ -79,6 +85,71 @@
         echo "<p>Recuperação</p>";
     }else{
         echo "<p>Reprovado</p>";
+    }
+
+    echo "<br>"; 
+    echo "<br>";
+    $idade = 20;
+    if($idade>=18){
+        echo "Pode entrar";
+    }else{
+        echo "Rejeitado";
+    }
+
+    echo "<br>";  
+    echo "<br>"; 
+    $idade = 20;
+    echo ($idade>=18) ? "Pode entrar" : "Rejeitado";
+    
+    echo "<br>"; 
+    echo "<br>"; 
+    $cor = "amarelo";
+    switch ($cor){
+        case 'azul':
+            echo "<p>Sua cor favorita é <b>AZUL</b></p>";
+            break;
+
+        case 'verde':
+            echo "<p>Sua cor favorita é <b>VERDE</b></p>";
+            break;
+
+        case 'vermelho':
+            echo "<p>Sua cor favorita é <b>VERMELHO</b></p>";
+            break;
+
+        default:
+            echo "<p>Sua cor favorita não é <b>verde, nem azul e nem vermelho</b></p>";
+            break;
+    }
+
+    echo "<br>"; 
+    echo "<br>"; 
+    $dia = 8;
+    switch($dia){
+        case 1:
+            echo "Domingo";
+            break;
+        case 2:
+            echo "Segunda";
+            break;
+        case 3:
+            echo "Terça";
+            break;
+        case 4:
+            echo "Quarta";
+            break;
+        case 5:
+            echo "Quinta";
+            break;
+        case 6:
+            echo "Sexta";
+            break;
+        case 7:
+            echo "Sábado";
+            break;
+        default:
+            echo " Dia inválido";
+            break;
     }
 
     ?>

@@ -53,7 +53,45 @@ if($nota >= 8){
     echo "<p>Reprovado</p>";
 }
 ```
-
-
-    - switch
-    - ternário
+### Ternário
+#### Sintaxe
+```php
+condição ? resposta verdadeira : resposta falsa
+```
+#### Exemplo
+```php
+$idade = 20;
+echo ($idade>=18) ? "Pode entrar" : "Rejeitado";
+```    
+### Switch
+#### Sintaze
+```php
+switch(variável){
+    case valor:
+        código
+        braek;
+    case valor:
+        código
+        braek;
+    default:
+        código
+        braek;
+}
+```
+#### Exemplo
+```php
+$cor = "amarelo";
+switch ($cor){
+    case 'azul':
+        echo "<p>Sua cor favorita é <b>AZUL</b></p>";
+        break;
+    case 'verde':
+        echo "<p>Sua cor favorita é <b>VERDE</b></p>";
+        break;
+    case 'vermelho':
+        echo "<p>Sua cor favorita é <b>VERMELHO</b></p>";
+        break;
+    default:
+        echo "<p>Sua cor favorita não é <b>verde, nem azul e nem vermelho</b></p>";
+        break;
+}
