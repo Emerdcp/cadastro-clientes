@@ -95,3 +95,23 @@ switch ($cor){
         echo "<p>Sua cor favorita não é <b>verde, nem azul e nem vermelho</b></p>";
         break;
 }
+```
+
+## Estruta de repetição
+### while - enquanto
+#### Sintaxe
+- Será executado o laço enquanto a condição for  verdadeira
+```php
+while(condição){
+    código
+}
+```
+#### Exemplo
+```php
+$contador = 1;
+while($contador <=10){
+    echo "contador com while, loop número $contador<br>";
+    $contador = $contador + 1;
+    //$contador++;
+}
+```
