@@ -18,11 +18,42 @@
 ## Estrutura de decisão
 ### if
 - Quando você precisa que seu código tome alguma decisçao baseado em uma ou mais condições.
+#### Sintaxe
+```php
+if(condição){
+    resposta vedadeira
+}else{
+    resposta falsa
+}
+```
+
+#### IF Simples
 ```php
 if ($idade >= 18 && $fumante == false){
-        echo "<p>Sua idade é $idade </p>";
-        echo "<p>Pode entrar na festa</p>";
-    }
+    echo "<p>Sua idade é $idade </p>";
+    echo "<p>Pode entrar na festa</p>";
+}
 ```
+#### IF com ELSE
+```php
+if ($idade >= 18 && $fumante == false){
+    echo "<p>Sua idade é $idade </p>";
+    echo "<p>Pode entrar na festa</p>";
+}else{
+    echo "Você não pode entrar";
+}
+```
+#### IF com ELSE IF
+```php
+if($nota >= 8){
+    echo "<p>Aprovado</p>";
+}else if($nota >= 5){
+    echo "<p>Recuperação</p>";
+}else{
+    echo "<p>Reprovado</p>";
+}
+```
+
+
     - switch
     - ternário
