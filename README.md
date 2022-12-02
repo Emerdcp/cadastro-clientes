@@ -115,3 +115,29 @@ while($contador <=10){
     //$contador++;
 }
 ```
+# Aula 05
+
+### Operador de incremento
+- `$i++` é igaul à `$i = $i + 1`
+- o operador `++` faz com que seja atribuído +1 à variável incrementada
+- o operador `--` faz com que seja removido -1 da variável decrementada
+
+### Array
+- arry é um variável com multidimensões, isso significa que eu posso armazenar diversos valores (inclusive) de tipos diferentes no array
+- um arry possui posição igual à quantidade de elementos. Exemplo: `$clientes = ['Eduardo', 'Emerson', 'Kadu']`
+- o arry clientes possui 3 posições o cliente começando em 0. Para eu exibir o cliente Eduardo eu debo usar `clientes[0]`, para exibir o cliente Kadu deve usar `$clientes[2]`.
+- o comando `count()` exibe a quantidade de posições de um arry. Exemplo: `count($clientes)`
+
+### for - para
+#### Sintaxe
+```php
+for(inicialização da variável ; condição ; incremento){
+    bloco de código
+}
+```
+#### Exemplo
+```php
+for($i=1; $i <=10; $i++){
+    echo $i;
+}
+```

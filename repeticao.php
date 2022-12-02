@@ -20,17 +20,28 @@
     }
 
     echo "<br>";
-    echo "<br>";
+    echo "<hr>";
     //array
     $cliente = ["Emerson", "Eduardo", "Kadu", "Karina", "Luzia", "Kauana", "Antonio", "Gabriel", "Andrea"];
     //echo "$cliente[0]<br>";
     //echo "$cliente[2]<br>";
-    $contador1 = 0;
-    while($contador1 <=8){
-        echo "$cliente[$contador1]<br>";
-        $contador1 = $contador1 + 1;
+    $i = 0;
+    while($i <=8){
+        echo "$cliente[$i]<br>";
+        $i = $i + 1;
+    }
+    echo "<hr>";
+    $i = 0;
+    while($i < count($cliente)){
+        echo "$cliente[$i]<br>";
+        $i = $i + 1;
     }
     
+    echo "<hr>";
+    for ($i=0; $i < count($cliente);
+    $i++) {
+        echo "$cliente[$i]<br>";
+    }
     ?>
 </body>
 </html>
