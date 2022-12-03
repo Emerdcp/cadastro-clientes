@@ -4,10 +4,16 @@
     - if
     - switch
     - ternário
+# Aula 05
 - Estrutura de repetição
     - while
+        - operador de incremento
+        - arry
     - for
 - Desafios
+- Arquivos texto
+    - Criar
+    - Ler
  
 ## Operadores lógicos
 - Os operadores lógicos são:
