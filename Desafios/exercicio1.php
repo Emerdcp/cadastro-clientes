@@ -10,11 +10,15 @@
     <h1>Exercicio1</h1>
     <h3>Faça um programa que exiba todos os números pares entre 0 e 100.</h3>
 
-    <?php   
+<?php   
     $pares = 0;
-    for ($pares = 0 ; $pares < 100; $pares++, $numero += 2) {
-        echo "$pares ";
+    for ($pares = 0 ; $pares <= 100; $pares++){
+        if($pares % 2 == 0){
+        echo $pares . "<br>";
+        }        
     }
-    ?>
+    echo "<hr>";
+    
+?>
 </body>
 </html>
