@@ -22,23 +22,36 @@ for($i=0; $i<count($listaClientes); $i++){
 $listaClientes = [
     [
         "nome" => "Emerson",
-        "idade" => 36    
+        "idade" => 33    
     ],
     [
         "nome" => "Karina",
-        "idade" => 34    
+        "idade" => 33   
+    ],
+    [   "nome" => "Kadu",
+        "idade" => 5
+    ],
+    [
+        "nome" => "Eduardo",
+        "idade" => 8
+    ],
+    [
+        "nome" => "Gabriel",
+        "idade" => 39
     ]
 ];
-
-print_r($listaClientes[0]["nome"]);
+/*
+print_r($listaClientes[0]["nome"]);//print_r serve para debugar no PHP
 print_r($listaClientes[0]["idade"]);
-echo "<br>";
+echo "<br>";*/
 
 for($i=0; $i<count($listaClientes); $i++){
-    fwrite($arquivo, $listaClientes[$i]["nome"] . "\t");
+    fwrite($arquivo, $listaClientes[$i]["nome"] . "\t\t");
     fwrite($arquivo, $listaClientes[$i]["idade"] . "\n");
 }
 
 fclose($arquivo);
 
 ?>
+
+<a href="clientes.txt" download>Lista de Clientes</a>/

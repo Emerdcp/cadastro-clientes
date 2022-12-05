@@ -147,3 +147,29 @@ for($i=1; $i <=10; $i++){
     echo $i;
 }
 ```
+## Continuação aula 05
+Criação de arquivo
+    - Criar
+    - Ler
+
+### Criando um arquivo
+- `fopen`: indicar o nome do arquivo e a meneira como esse arquivo será aberto. Exemplo: ``fopen("cliente.txt","w");` o nome do arquivo é "clientes.txt" e a maneira como arquivo será aberto é "w", que siginifica escrita.
+- `fwrite`: indica o nome do arquivo e cp conteúdo que será inserido nesse arquivo. Exemplo: `fwrite("$arquivo","Renata");` o nome do arquivo é "clientes.txt" e o conteúdo que será inserido no arquivos ´e "Renata".
+- `fclose`: indica qual arquivo será fechado. Exemplo: `fclose("$arquivo");`.
+
+```php
+$arquivo = fopen("clientes.txt","w");
+fwrite($arquivo, "Renata");
+fclese($arquivo);
+```
+> Tabela com os modos de abertura de arquivos: https://eufacoprogramas.com/como-manipular-arquivos-em-php/
+
+#### Lendo um arquivo
+- `fopen`: o modo de abertura é o "r" que indica leiutra do arquivo. Exemplo: `fopen("clientes.txt","r");
+- `fread`: indicar o arquivivo que será lidoe o tamanho das informações que seram lidas, nesse caso, como normalmente queremos o arquivo inteiro utilizmaos o comando `filesize` que retorna o tamanho de um arquivo.
+Exemplo: `fread($arquivo, filesize("clientes.txt"));
+
+```php
+$arquivo = fopen("clientes.txt","r");//dúvida no " "
+echo fread($arquivo, filesize("clientes.txt"));
+fclose($arquivo);

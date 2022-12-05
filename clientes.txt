@@ -1,2 +1,5 @@
-Emerson	36
-Karina	34
+Emerson		33
+Karina		33
+Kadu		5
+Eduardo		8
+Gabriel		39
