@@ -173,3 +173,26 @@ Exemplo: `fread($arquivo, filesize("clientes.txt"));
 $arquivo = fopen("clientes.txt","r");//dúvida no " "
 echo fread($arquivo, filesize("clientes.txt"));
 fclose($arquivo);
+
+
+
+### Criação Tabela
+
+<table border=2>
+    <thead>
+        <tr> //Coluna
+            <th>Nome</th> //Linha
+            <th>Idade</th>
+        </tr>   
+    </thead>
+    <tbody>
+        <tr>
+            <td>Emerson Carvalho</td>
+            <td>33</td>
+        </tr>
+        <tr>
+            <td>Kadu Fernandes</td>
+            <td>5</td>
+        </tr>
+    </tbody>
+</table>
