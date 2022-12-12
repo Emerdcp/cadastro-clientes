@@ -11,9 +11,15 @@
     <?php
     $nome = $_POST["nome"];
     $email = $_POST["email"];
+    $dados = "";
     //echo $nome . $email;
+    if(file_exists("estudantes.txt")){
+        $dados = "\n$nome \t $email";
+    }else{
+        $dados = "$nome \t $email";        
+    }
     $arquivo = fopen("estudantes.txt","a+");
-    fwrite($arquivo, "$nome \t $email \n");
+    fwrite($arquivo, $dados);
     fclose($arquivo);
 /*
     $arquivo = fopen("estudantes.txt","r");
